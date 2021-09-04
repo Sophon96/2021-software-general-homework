@@ -1,17 +1,3 @@
-# A student has taken 3 tests in a class, and wants to know their current grade 
-# (which is only calculated by these tests). 
-
-# Ask the user to input all three of the test scores for the student, one by one. 
-
-# The program should then calculate the average test score (average is adding all three 
-# test scores together then dividing by 3), and then print the student's letter grade 
-# (as well as the average score as a number).
-
-
-
-
-#########################################################
-
 # Gregory wants to know how many toys they can buy at Toys'N'Us
 
 # They prioritize buying the most expensive toys first (For ejm. If Gregory had $50 
@@ -20,3 +6,13 @@
 
 # Have the user input how much money Gregory has then print how many of each 
 # toy they can afford, as well as how much money they'd have remaining
+
+if __name__ == '__main__':
+    budget = float(input("Budget: "))
+    jbypc = budget // 20
+    budget -= jbypc * 20
+    bc = budget // 7.2
+    budget -= bc * 7.2
+    shc = budget // 0.5
+    budget -= shc * 0.5
+    print(f'Jumbo Baby Yoda Plushies: {jbypc}\nBeyblades: {bc}\nStick Hands: {shc}\nRemaining Money: {budget}')
